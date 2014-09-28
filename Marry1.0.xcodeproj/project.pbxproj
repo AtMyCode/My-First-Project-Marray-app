@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		189463E919D81C06008198D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463E819D81C06008198D6 /* Foundation.framework */; };
+		189463EB19D81C06008198D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463EA19D81C06008198D6 /* CoreGraphics.framework */; };
+		189463ED19D81C06008198D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463EC19D81C06008198D6 /* UIKit.framework */; };
+		189463EF19D81C06008198D6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463EE19D81C06008198D6 /* CoreData.framework */; };
+		189463F519D81C06008198D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189463F319D81C06008198D6 /* InfoPlist.strings */; };
+		189463F719D81C06008198D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189463F619D81C06008198D6 /* main.m */; };
+		189463FB19D81C06008198D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189463FA19D81C06008198D6 /* AppDelegate.m */; };
+		189463FE19D81C06008198D6 /* Marry1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189463FC19D81C06008198D6 /* Marry1_0.xcdatamodeld */; };
+		1894640019D81C06008198D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189463FF19D81C06008198D6 /* Images.xcassets */; };
+		1894640719D81C06008198D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1894640619D81C06008198D6 /* XCTest.framework */; };
+		1894640819D81C06008198D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463E819D81C06008198D6 /* Foundation.framework */; };
+		1894640919D81C06008198D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463EC19D81C06008198D6 /* UIKit.framework */; };
+		1894640A19D81C06008198D6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189463EE19D81C06008198D6 /* CoreData.framework */; };
+		1894641219D81C06008198D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1894641019D81C06008198D6 /* InfoPlist.strings */; };
+		1894641419D81C06008198D6 /* Marry1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894641319D81C06008198D6 /* Marry1_0Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1894640B19D81C06008198D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189463DD19D81C06008198D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189463E419D81C06008198D6;
+			remoteInfo = Marry1.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		189463E519D81C06008198D6 /* Marry1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marry1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189463E819D81C06008198D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		189463EA19D81C06008198D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		189463EC19D81C06008198D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		189463EE19D81C06008198D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		189463F219D81C06008198D6 /* Marry1.0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Marry1.0-Info.plist"; sourceTree = "<group>"; };
+		189463F419D81C06008198D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		189463F619D81C06008198D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189463F819D81C06008198D6 /* Marry1.0-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marry1.0-Prefix.pch"; sourceTree = "<group>"; };
+		189463F919D81C06008198D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		189463FA19D81C06008198D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		189463FD19D81C06008198D6 /* Marry1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marry1_0.xcdatamodel; sourceTree = "<group>"; };
+		189463FF19D81C06008198D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1894640519D81C06008198D6 /* Marry1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marry1.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1894640619D81C06008198D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1894640F19D81C06008198D6 /* Marry1.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Marry1.0Tests-Info.plist"; sourceTree = "<group>"; };
+		1894641119D81C06008198D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1894641319D81C06008198D6 /* Marry1_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Marry1_0Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189463E219D81C06008198D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189463EB19D81C06008198D6 /* CoreGraphics.framework in Frameworks */,
+				189463EF19D81C06008198D6 /* CoreData.framework in Frameworks */,
+				189463ED19D81C06008198D6 /* UIKit.framework in Frameworks */,
+				189463E919D81C06008198D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1894640219D81C06008198D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1894640719D81C06008198D6 /* XCTest.framework in Frameworks */,
+				1894640A19D81C06008198D6 /* CoreData.framework in Frameworks */,
+				1894640919D81C06008198D6 /* UIKit.framework in Frameworks */,
+				1894640819D81C06008198D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189463DC19D81C06008198D6 = {
+			isa = PBXGroup;
+			children = (
+				189463F019D81C06008198D6 /* Marry1.0 */,
+				1894640D19D81C06008198D6 /* Marry1.0Tests */,
+				189463E719D81C06008198D6 /* Frameworks */,
+				189463E619D81C06008198D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		189463E619D81C06008198D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189463E519D81C06008198D6 /* Marry1.0.app */,
+				1894640519D81C06008198D6 /* Marry1.0Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189463E719D81C06008198D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189463E819D81C06008198D6 /* Foundation.framework */,
+				189463EA19D81C06008198D6 /* CoreGraphics.framework */,
+				189463EC19D81C06008198D6 /* UIKit.framework */,
+				189463EE19D81C06008198D6 /* CoreData.framework */,
+				1894640619D81C06008198D6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189463F019D81C06008198D6 /* Marry1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				189463F919D81C06008198D6 /* AppDelegate.h */,
+				189463FA19D81C06008198D6 /* AppDelegate.m */,
+				189463FF19D81C06008198D6 /* Images.xcassets */,
+				189463FC19D81C06008198D6 /* Marry1_0.xcdatamodeld */,
+				189463F119D81C06008198D6 /* Supporting Files */,
+			);
+			path = Marry1.0;
+			sourceTree = "<group>";
+		};
+		189463F119D81C06008198D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189463F219D81C06008198D6 /* Marry1.0-Info.plist */,
+				189463F319D81C06008198D6 /* InfoPlist.strings */,
+				189463F619D81C06008198D6 /* main.m */,
+				189463F819D81C06008198D6 /* Marry1.0-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1894640D19D81C06008198D6 /* Marry1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1894641319D81C06008198D6 /* Marry1_0Tests.m */,
+				1894640E19D81C06008198D6 /* Supporting Files */,
+			);
+			path = Marry1.0Tests;
+			sourceTree = "<group>";
+		};
+		1894640E19D81C06008198D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1894640F19D81C06008198D6 /* Marry1.0Tests-Info.plist */,
+				1894641019D81C06008198D6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189463E419D81C06008198D6 /* Marry1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1894641719D81C06008198D6 /* Build configuration list for PBXNativeTarget "Marry1.0" */;
+			buildPhases = (
+				189463E119D81C06008198D6 /* Sources */,
+				189463E219D81C06008198D6 /* Frameworks */,
+				189463E319D81C06008198D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marry1.0;
+			productName = Marry1.0;
+			productReference = 189463E519D81C06008198D6 /* Marry1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1894640419D81C06008198D6 /* Marry1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1894641A19D81C06008198D6 /* Build configuration list for PBXNativeTarget "Marry1.0Tests" */;
+			buildPhases = (
+				1894640119D81C06008198D6 /* Sources */,
+				1894640219D81C06008198D6 /* Frameworks */,
+				1894640319D81C06008198D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1894640C19D81C06008198D6 /* PBXTargetDependency */,
+			);
+			name = Marry1.0Tests;
+			productName = Marry1.0Tests;
+			productReference = 1894640519D81C06008198D6 /* Marry1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189463DD19D81C06008198D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = lj;
+				TargetAttributes = {
+					1894640419D81C06008198D6 = {
+						TestTargetID = 189463E419D81C06008198D6;
+					};
+				};
+			};
+			buildConfigurationList = 189463E019D81C06008198D6 /* Build configuration list for PBXProject "Marry1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 189463DC19D81C06008198D6;
+			productRefGroup = 189463E619D81C06008198D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189463E419D81C06008198D6 /* Marry1.0 */,
+				1894640419D81C06008198D6 /* Marry1.0Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189463E319D81C06008198D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189463F519D81C06008198D6 /* InfoPlist.strings in Resources */,
+				1894640019D81C06008198D6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1894640319D81C06008198D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1894641219D81C06008198D6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189463E119D81C06008198D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189463FB19D81C06008198D6 /* AppDelegate.m in Sources */,
+				189463F719D81C06008198D6 /* main.m in Sources */,
+				189463FE19D81C06008198D6 /* Marry1_0.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1894640119D81C06008198D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1894641419D81C06008198D6 /* Marry1_0Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1894640C19D81C06008198D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189463E419D81C06008198D6 /* Marry1.0 */;
+			targetProxy = 1894640B19D81C06008198D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		189463F319D81C06008198D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189463F419D81C06008198D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1894641019D81C06008198D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1894641119D81C06008198D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1894641519D81C06008198D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1894641619D81C06008198D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1894641819D81C06008198D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Marry1.0/Marry1.0-Prefix.pch";
+				INFOPLIST_FILE = "Marry1.0/Marry1.0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1894641919D81C06008198D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Marry1.0/Marry1.0-Prefix.pch";
+				INFOPLIST_FILE = "Marry1.0/Marry1.0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1894641B19D81C06008198D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marry1.0.app/Marry1.0";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Marry1.0/Marry1.0-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Marry1.0Tests/Marry1.0Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1894641C19D81C06008198D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marry1.0.app/Marry1.0";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Marry1.0/Marry1.0-Prefix.pch";
+				INFOPLIST_FILE = "Marry1.0Tests/Marry1.0Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189463E019D81C06008198D6 /* Build configuration list for PBXProject "Marry1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1894641519D81C06008198D6 /* Debug */,
+				1894641619D81C06008198D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1894641719D81C06008198D6 /* Build configuration list for PBXNativeTarget "Marry1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1894641819D81C06008198D6 /* Debug */,
+				1894641919D81C06008198D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1894641A19D81C06008198D6 /* Build configuration list for PBXNativeTarget "Marry1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1894641B19D81C06008198D6 /* Debug */,
+				1894641C19D81C06008198D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		189463FC19D81C06008198D6 /* Marry1_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				189463FD19D81C06008198D6 /* Marry1_0.xcdatamodel */,
+			);
+			currentVersion = 189463FD19D81C06008198D6 /* Marry1_0.xcdatamodel */;
+			path = Marry1_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 189463DD19D81C06008198D6 /* Project object */;
+}
