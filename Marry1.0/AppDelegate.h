@@ -7,9 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+#import "HunShiViewController.h"
+#import "AppNavigationController.h"
+#import "HunDianViewController.h"
+#import "TWTSideMenuViewController.h"
+#import "InvitationCardMainController.h"
+#import "InvitationCardMenuController.h"
+#import "StoryViewController.h"
+#import "MySetViewController.h"
+#import "LauchesViewController.h"
+#import "AGViewDelegate.h"
+#import "UMFeedback.h"
+@class SendMessageToWeiboViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate,TWTSideMenuViewControllerDelegate,WeiboSDKDelegate,WBHttpRequestDelegate,UIAlertViewDelegate>
+{
+    
+        NSString* wbtoken;
+    
+}
+@property (nonatomic,retain) AGViewDelegate *viewDelegate;
+@property (strong, nonatomic) SendMessageToWeiboViewController *viewController;
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
@@ -19,4 +36,9 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+@property (nonatomic, strong) TWTSideMenuViewController *sideMenuViewController;
+@property (nonatomic, strong) InvitationCardMenuController *invitationCardMenuController;
+@property (nonatomic, strong) InvitationCardMainController *invitationCardMainController;
+@property (strong, nonatomic) NSString *wbtoken;
+-(void)updateApp;
 @end

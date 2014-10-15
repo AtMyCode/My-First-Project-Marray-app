@@ -14,4 +14,19 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+#import "UIImageView+WebCache.h"
+
+#import "JSONKit.h"
+#import "Reachability.h"
+
+#import "WeiboSDK.h"
+
+//com.sina.weibo.SNWeiboSDKDemo
+#define kAppKey         @"1189674826"
+#define kRedirectURI    @"http://www.sharesdk.cn"
+
+
+ #define  KScreenWidth [UIScreen mainScreen].bounds.size.width 
+#define  KScreenHeight [[UIScreen mainScreen] bounds].size.height
+
 #endif
