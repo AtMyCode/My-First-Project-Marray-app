@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "GuangCollectionCell.h"
 #import "ThemeImageDetailVCViewController.h"
+#import "HSBuyDataProvider.h"
 @interface ThemeContentController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     UIActivityIndicatorView *indicatorView;
+    
+    NSString * urlBuyString;
 }
 @property(retain,nonatomic)NSMutableArray *themeContentImagesURLArr; //图片路径
 
@@ -19,4 +22,5 @@
 
 @property(retain,nonatomic) NSMutableArray *themeContentPriceArr;//价格
 @property(retain,nonatomic)NSMutableArray *themeSubject_descArr;//商品描述
+@property(retain,nonatomic)NSMutableArray *themeContentID;
 @end

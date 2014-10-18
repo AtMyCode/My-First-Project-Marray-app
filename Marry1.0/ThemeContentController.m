@@ -13,7 +13,7 @@
 @end
 
 @implementation ThemeContentController
-@synthesize themeContentImagesURLArr,themeSubject_descArr,themeContentPriceArr,themeContentLikeCountArr;
+@synthesize themeContentImagesURLArr,themeSubject_descArr,themeContentPriceArr,themeContentLikeCountArr,themeContentID;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,8 +35,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ThemeDataContentNotiction:) name:@"THEMEContentDATADFINISH" object:nil];
   
     
+   
+    
 
 }
+
 -(void)ThemeDataContentNotiction:(NSNotification*)note
 {
     NSLog(@"Theme Content 的 Arr 拿到了！");
@@ -46,6 +49,8 @@
     self.themeSubject_descArr = [dict objectForKey:@"subject_desc"];
     self.themeContentLikeCountArr = [dict objectForKey:@"like_count"];
     self.themeContentImagesURLArr = [dict objectForKey:@"photo_path"];
+    self.themeContentID = [dict objectForKey:@"id"];
+    //NSLog(@"theme = %@",self.themeContentID);
     //        NSLog(@"%@,%@,%@,%@",[themeContentLikeCountArr objectAtIndex:0],[themeContentImagesURLArr objectAtIndex:0],[themeContentPriceArr objectAtIndex:0],[themeSubject_descArr objectAtIndex:0]);
     
     [self addCollectionView];//添加collectionview
@@ -96,6 +101,12 @@
 {
     
     ThemeImageDetailVCViewController *detailVC = [[ThemeImageDetailVCViewController alloc] init];
+    HSBuyDataProvider *buyDataProvider = [[HSBuyDataProvider alloc] init];
+    [buyDataProvider requstBuyData:[[self.themeContentID objectAtIndex:indexPath.row] intValue]];
+    
+    
+   
+   
     detailVC.productsDetailStr= [self.themeSubject_descArr objectAtIndex:indexPath.row];
     detailVC.productsPrice = [[self.themeContentPriceArr objectAtIndex:indexPath.row] floatValue];
     [detailVC setValue:self.themeContentImagesURLArr forKey:@"imageArr"];

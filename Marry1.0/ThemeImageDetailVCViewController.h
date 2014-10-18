@@ -14,4 +14,6 @@
 }
 -(void)dispalyImageAndDetailLabel:(int)index;
 @property(strong,nonatomic)NSMutableArray *imageArr;
+@property(copy,nonatomic)NSString *stringBuyURL;
+
 @end

@@ -17,6 +17,8 @@
     NSMutableArray *themeContentLikeCountArr;
     NSMutableArray *themeContentPriceArr;
     NSMutableArray *themeSubject_descArr;//商品描述
+    
+    NSMutableArray *themeContentID;
 }
 -(void)requestImageThemeData:(int)ID;
 @end

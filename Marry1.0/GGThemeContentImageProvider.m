@@ -17,6 +17,7 @@
     themeContentLikeCountArr = [[NSMutableArray alloc] init];
     themeContentPriceArr = [[NSMutableArray alloc] init];
     themeSubject_descArr = [[NSMutableArray alloc] init];
+    themeContentID = [[NSMutableArray alloc] init];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://marrymemo.com/subjects/%d.json",ID]];
     
 
@@ -46,17 +47,18 @@
     ;
     
     NSArray *arr = [contentDict objectForKey:@"products"];
-    NSLog(@"%@",arr);
+   // NSLog(@"%@",arr);
     for (NSDictionary *productDict in arr)
     {
         [themeContentLikeCountArr addObject:[productDict objectForKey:@"like_count"]];
         [themeContentImagesURLArr addObject:[productDict objectForKey:@"photo_path"]];
         [themeContentPriceArr addObject:[productDict objectForKey:@"price"]] ;
         [themeSubject_descArr addObject:[productDict objectForKey:@"subject_desc"]];
+        [themeContentID addObject:[productDict objectForKey:@"id"]];
     }
 //     NSLog(@"%@,%@,%@,%@",[themeContentLikeCountArr objectAtIndex:0],[themeContentImagesURLArr objectAtIndex:0],[themeContentPriceArr objectAtIndex:0],[themeSubject_descArr objectAtIndex:0]);
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"THEMEContentDATADFINISH" object:self userInfo:@{@"photo_path": themeContentImagesURLArr,@"price":themeContentPriceArr,@"like_count":themeContentLikeCountArr,@"subject_desc":themeSubject_descArr}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"THEMEContentDATADFINISH" object:self userInfo:@{@"photo_path": themeContentImagesURLArr,@"price":themeContentPriceArr,@"like_count":themeContentLikeCountArr,@"subject_desc":themeSubject_descArr,@"id":themeContentID}];
    
     
 }

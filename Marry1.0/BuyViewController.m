@@ -14,7 +14,7 @@
 @end
 
 @implementation BuyViewController
-
+@synthesize urlBuyString;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,9 +32,12 @@
     
     
     //self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.taobao.com"]];
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:urlBuyString]];
+   // NSURLRequest *request =  [NSURLRequest requestWithURL:[NSURL URLWithString:urlBuyString] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:60];
     [self.view addSubview: self.webView];
     [self.webView loadRequest:request];
+    
+    //NSLog(@"%@",urlBuyString);
 }
 
 - (void)didReceiveMemoryWarning

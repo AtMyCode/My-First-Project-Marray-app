@@ -64,6 +64,7 @@
 		18932D8A19E49555006913EB /* card_photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932D8919E49555006913EB /* card_photos@2x.png */; };
 		18932D8C19E498BA006913EB /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932D8B19E498BA006913EB /* nav_menu_icon@2x.png */; };
 		18932D9019E49D6A006913EB /* StoryDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 18932D8F19E49D6A006913EB /* StoryDataProvider.m */; };
+		1893567719EF18C1008D4891 /* HSBuyDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893567619EF18C1008D4891 /* HSBuyDataProvider.m */; };
 		1893B98819E1F28B00316966 /* InvitationCardMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893B98719E1F28B00316966 /* InvitationCardMainController.m */; };
 		1893B98B19E1F2A100316966 /* InvitationCardMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893B98A19E1F2A100316966 /* InvitationCardMenuController.m */; };
 		1893B98E19E1F2AF00316966 /* TWTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893B98D19E1F2AF00316966 /* TWTSideMenuViewController.m */; };
@@ -288,6 +289,8 @@
 		18932D8B19E498BA006913EB /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
 		18932D8E19E49D6A006913EB /* StoryDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryDataProvider.h; sourceTree = "<group>"; };
 		18932D8F19E49D6A006913EB /* StoryDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryDataProvider.m; sourceTree = "<group>"; };
+		1893567519EF18C1008D4891 /* HSBuyDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBuyDataProvider.h; sourceTree = "<group>"; };
+		1893567619EF18C1008D4891 /* HSBuyDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBuyDataProvider.m; sourceTree = "<group>"; };
 		1893B98619E1F28B00316966 /* InvitationCardMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationCardMainController.h; sourceTree = "<group>"; };
 		1893B98719E1F28B00316966 /* InvitationCardMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationCardMainController.m; sourceTree = "<group>"; };
 		1893B98919E1F2A100316966 /* InvitationCardMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationCardMenuController.h; sourceTree = "<group>"; };
@@ -1003,6 +1006,8 @@
 				DE2D186B19D9680F00F9CB04 /* GGThemeDataProvider.m */,
 				189812D719DC8AAD00A1044E /* GGThemeContentImageProvider.h */,
 				189812D819DC8AAD00A1044E /* GGThemeContentImageProvider.m */,
+				1893567519EF18C1008D4891 /* HSBuyDataProvider.h */,
+				1893567619EF18C1008D4891 /* HSBuyDataProvider.m */,
 			);
 			name = "婚饰数据";
 			sourceTree = "<group>";
@@ -1415,6 +1420,7 @@
 				189463F719D81C06008198D6 /* main.m in Sources */,
 				1894649A19D8AB70008198D6 /* UIScrollView+MJExtension.m in Sources */,
 				1894644819D89DA7008198D6 /* GuangCollectionCell.m in Sources */,
+				1893567719EF18C1008D4891 /* HSBuyDataProvider.m in Sources */,
 				18278A5619DA14930091A880 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				DE26CCE919E8C33100C97748 /* SetMyStoryViewController.m in Sources */,
 				DE6AC7B419E5234300FCA187 /* StoryDetailDataProvider.m in Sources */,

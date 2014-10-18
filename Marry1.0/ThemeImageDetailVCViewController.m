@@ -14,7 +14,7 @@
 @end
 
 @implementation ThemeImageDetailVCViewController
-@synthesize imageArr;
+@synthesize imageArr,stringBuyURL;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,12 +30,30 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(buyNotifi:) name:@"BuyNotifi" object:nil];
+    
     UIButton *btn  = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:@"shard"] forState:UIControlStateNormal];
     btn.frame = CGRectMake(0, 0, 30, 30);
     [btn addTarget:self action:@selector(shareImage:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 
+    
+    
+}
+-(void)buyAction
+{
+    BuyViewController *buyVC = [[BuyViewController alloc] init];
+    buyVC.urlBuyString = stringBuyURL;
+    [self.navigationController pushViewController:buyVC animated:YES];
+}
+-(void)buyNotifi:(NSNotification*)note
+{
+   
+    NSDictionary *dict = [note userInfo];
+    stringBuyURL = [dict objectForKey:@"buy_url"];
+    
 }
 -(void)dispalyImageAndDetailLabel:(int)index
 {

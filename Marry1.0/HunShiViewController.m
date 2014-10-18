@@ -254,7 +254,8 @@
     imageDetailViewController.productsDetailStr =[productsDetailInfoArr objectAtIndex:indexPath.row];
     imageDetailViewController.productsPrice = [[productsPriceArr objectAtIndex:indexPath.row] floatValue];
     imageDetailViewController.view.backgroundColor = [UIColor whiteColor];
-    
+    imageDetailViewController.productsId = [[productsID objectAtIndex:indexPath.row] intValue];
+   // NSLog(@"%@",productsID);
     //NSLog(@"%@",[productsPriceArr objectAtIndex:indexPath.row]);
     [self.navigationController pushViewController:imageDetailViewController animated:YES];
     

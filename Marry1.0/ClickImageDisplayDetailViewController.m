@@ -14,7 +14,7 @@
 @end
 
 @implementation ClickImageDisplayDetailViewController
-@synthesize guangguangDataProvider,detailIndex,productsDetailStr,productsPrice,imageView;
+@synthesize guangguangDataProvider,detailIndex,productsDetailStr,productsPrice,imageView,productsId;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addNotif];
     
     
     // Do any additional setup after loading the view from its nib.
@@ -58,11 +59,34 @@
     [buyBtn setTitle:@"购买" forState:UIControlStateNormal];
     [buyBtn addTarget:self action:@selector(buyAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:buyBtn];
+    
+    
 
+}
+-(void)addNotif
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(buyNotifi:) name:@"BuyNotifi" object:nil];
+}
+-(void)buyNotifi:(NSNotification*)note
+{
+    NSDictionary *dict = [note userInfo];
+    urlBuyString = [dict objectForKey:@"buy_url"];
+    //NSLog(@"%@",urlBuyString);
+    
+    
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+     
+    HSBuyDataProvider *buyDataProvider = [[HSBuyDataProvider alloc] init];
+    [buyDataProvider requstBuyData:self.productsId];
+    
 }
 -(void)buyAction
 {
     BuyViewController *buyVC = [[BuyViewController alloc] init];
+    buyVC.urlBuyString = urlBuyString;
     [self.navigationController pushViewController:buyVC animated:YES];
 }
 -(void)shareImage:(id)sender

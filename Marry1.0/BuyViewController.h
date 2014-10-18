@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BuyViewController : UIViewController
-
+@property(copy,nonatomic)NSString *urlBuyString;
 @end
