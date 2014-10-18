@@ -130,7 +130,7 @@
         [SDWebImageManager.sharedManager.imageCache clearMemory];
         [SDWebImageManager.sharedManager.imageCache clearDisk];
         NSString *cache = [NSString stringWithFormat:@"清理缓存(%.2lfM)",[SDWebImageManager.sharedManager.imageCache  getSize]/(1024.0*1024.0)];
-        textArr = @[@"婚礼流程",@"我的故事",cache,@"关于我们"];
+        textArr = @[@"婚礼流程",@"我的故事",cache,@"关于我们",@"意见反馈",@"版本更新"];
 
         [setTableView reloadData];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"缓存已清除" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
