@@ -70,10 +70,10 @@
     UIView *background = [[UIView alloc] initWithFrame:CGRectMake(0, 180, KScreenWidth, KScreenHeight)];
     background.backgroundColor = [UIColor colorWithRed:245/255.0 green:202/255.0 blue:202/255.0 alpha:1];
     [self.view addSubview:background];
-    setTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 10, KScreenWidth, 44*6) style:UITableViewStylePlain];
+    setTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 10, KScreenWidth, 44*5) style:UITableViewStylePlain];
     setTableView.delegate =self;
     setTableView.dataSource = self;
-    setTableView.scrollEnabled = NO;
+    setTableView.scrollEnabled = YES;
     [background addSubview:setTableView];
     
     NSString *cache = [NSString stringWithFormat:@"清理缓存(%.2lfM)",[SDWebImageManager.sharedManager.imageCache  getSize]/(1024.0*1024.0)];
